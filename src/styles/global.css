@@ -19,10 +19,24 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+
+header {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  min-height: 60px;
+}
 /* nav styles */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
+  width: min-content;
 }
 
 .hamburger .line {
@@ -31,6 +45,10 @@ h1 {
   height: 5px;
   margin-bottom: 10px;
   background-color: #ff9776;
+}
+
+.hamburger .line:last-of-type {
+  margin-bottom: 0;
 }
 
 .nav-links {
@@ -78,4 +96,13 @@ a:focus {
   .hamburger {
     display: none;
   }
+}
+
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
